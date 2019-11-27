@@ -6,6 +6,7 @@
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
     function dailyObjectives() {document.getElementById("dailyObjectives").classList.toggle("show");}
+    function allSchoolResources() {document.getElementById("allSchoolResources").classList.toggle("show");}
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
@@ -50,13 +51,20 @@
       <a href="objective6.html">CSE 6</a>
     </div>
   </div>
-  Daily Objectives:
-  <a href="objective2.html" target="_self">CSE 2</a>
-  <a href="objective3.html">CSP 3</a>
-  <a href="objective4.html">CSE 4</a>
-  <a href="objective5.html">CSA 5</a>
-  <a href="objective6.html">CSE 6</a> 
-  <br>
+  <div class="dropdown"> 
+  <button onclick="allSchoolResources()" class="dropbtn">All School Resources</button>
+    <div id="allSchoolResources" class="dropdown-content">
+      <a href="" target="_blank">ATLAS</a>
+      <a href="" target="_blank">Dojo</a>
+      <a href="" target="_blank">Edmodo</a>
+      <a href="" target="_blank">PLTW</a>
+      <a href="" target="_blank">Code.org</a>
+      <a href="" target="_blank">Socrative</a>
+      <a href="" target="_blank">Quizlet</a>
+      <a href="" target="_blank">KITE</a>
+    </div>
+  </div>
+
   All School Resources:
   <a href="" target="_blank">ATLAS</a>
   <a href="" target="_blank">Dojo</a>
