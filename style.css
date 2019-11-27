@@ -13,8 +13,8 @@
                        text-align: center;
                        text-decoration: none;
                        display: inline-block;}
-  a:hover, a:active   {background-color: white;
-                       color: black;}
+  a:hover, a:active   {background-color: black;
+                       color: white;}
   /* Dropdown Button */
   .dropbtn {
     background-color: #3498DB;
