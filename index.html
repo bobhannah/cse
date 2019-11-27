@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table, th, td       {border: 1px solid white;
+                           border-collapse: collapse;}
+      table th            {color: white;}
+      table td            {color: white; text-align: center;}
+      body                {background-color: black;
+                           background-image: url("images/tree.jpg");
+                           background-repeat: no-repeat;}
+      h1                  {color:white;}
+      p                   {color: white;}
+      a:link, a:visited   {background color: black;
+                           color: white;
+                           padding: 14px 25px;
+                           text-align: center;
+                           text-decoration: none;
+                           display: inline-block;}
+      a:hover, a:active   {background-color: white;
+                           color: black;}
+      /* Dropdown Button */
+      .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      /* Dropdown button on hover & focus */
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #ddd}
+      /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+      .show {display:block;}
+      
+    </style>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function dailyObjectives() {document.getElementById("dailyObjectives").classList.toggle("show");}
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>    
+  </head>
+<body>
+<!-- <body style="background-color:black;">
+<font color="white"><b> -->
+  <h1> <center> AP Computer Science </center> </h1>
+  <p> Welcome </p>
+  <table style="width:100%">
+    <tr>
+      <th>Software Engineering</th>
+      <th>AP Computer Science P</th>
+      <th>AP Computer Science A</th>
+    </tr>
+    <tr>
+      <td>CSE Blog</td>
+      <td>CSP Blog</td>
+      <td>CSA Blog</td>
+    </tr>
+  </table>
+  <br>
+<font size=4; font color="white";>
+  <div class="dropdown">
+  <button onclick="dailyObjectives()" class="dropbtn">Daily Objectives</button>
+    <div id="dailyObjectives" class="dropdown-content">
+      <a href="objective2.html">CSE 2</a>
+      <a href="objective3.html">CSP 3</a>
+      <a href="objective4.html">CSE 4</a>
+      <a href="objective5.html">CSA 5</a>
+      <a href="objective6.html">CSE 6</a>
+    </div>
+  </div>
+  Daily Objectives:
+  <a href="objective2.html" target="_self">CSE 2</a>
+  <a href="objective3.html">CSP 3</a>
+  <a href="objective4.html">CSE 4</a>
+  <a href="objective5.html">CSA 5</a>
+  <a href="objective6.html">CSE 6</a> 
+  <br>
+  All School Resources:
+  <a href="" target="_blank">ATLAS</a>
+  <a href="" target="_blank">Dojo</a>
+  <a href="" target="_blank">Edmodo</a>
+  <a href="" target="_blank">PLTW</a>
+  <a href="" target="_blank">Code.org</a>
+  <a href="" target="_blank">Socrative</a>
+  <a href="" target="_blank">Quizlet</a>
+  <a href="" target="_blank">KITE</a>
+  <br>
+  AP Resources:
+  <a href="" target="_blank">CSP College Board</a>
+  <a href="" target="_blank">CSA College Board</a>
+  <a href="" target="_blank">Explore Task</a>
+  <a href="" target="_blank">Create Task</a>
+  <a href="" target="_blank">Digital Portfolio</a>
+  <br>
+  Block Coding:
+  <a href="" target="_blank">Lightbot</a>
+  <a href="" target="_blank">Kodu</a>
+  <a href="" target="_blank">Scratch</a>
+  <a href="" target="_blank">Snap!</a>
+  <a href="" target="_blank">App Inventor</a>
+  <a href="" target="_blank">Blockly</a>
+  <a href="" target="_blank">Blockly2</a>
+  <br>
+  Calendar Generators:
+  <a href="" target="_blank">Calendarlabs</a>
+  <br>Citation Generators:
+  <a href="" target="_blank">Easy Bib</a>
+  <a href="" target="_blank">Citation Machine</a>
+  <br>
+  Collaborative Learning:
+  <a href="" target="_blank">Screenshare</a>
+  Click Join a Meeting; Meeting ID: 297-923-5716 or
+  <a href="" target="_blank">Discord</a>
+  <br>
+  Community Resources:
+  <a href="" target="_blank">IMAGO Registration</a>
+  <a href="" target="_blank">IMAGO Login</a>
+  <a href="" target="_blank">Stack Overflow</a>
+  9JKWGV97
+  <br>
+  CyberSecurity:
+  <a href="" target="_blank">Norse World Map</a>
+  <br>
+  Emulator Resources:
+  <a href="" target="_blank">Mechabricks</a>
+  <a href="" target="_blank">Android Emulator</a>
+  <a href="" target="_blank">Nox Emulator</a>
+  <a href="" target="_blank">AI Starter</a>
+  <a href="" target="_blank">AI2 Ultimate</a>
+  <br>
+  Flash Video Downloader:
+  <a href="" target="_blank">Chrome</a>
+  <a href="" target="_blank">Firefox</a>
+  <br>
+  Flowchart Generators:
+  <a href="" target="_blank">Google Drawings</a>
+  <a href="" target="_blank">Gliffy</a>
+  <a href="" target="_blank">MindMap</a>
+  <br>
+  Google Tools:
+  <a href="" target="_blank">Calendar</a>
+  <a href="" target="_blank">Drive</a>
+  <a href="" target="_blank">Sketchup</a>
+  <br>
+  Graphics Tools:
+  <a href="" target="_blank">Autodesk Inventor</a>
+  <a href="" target="_blank">Solidworks Education</a>
+  <br>
+  HHI LMS:
+  <a href="" target="_blank">Canvas Instructure</a>
+  <a href="" target="_blank">Lightswitch</a>
+  <a href="" target="_blank">Folder</a>
+  <br>
+  Media Resources:
+  <a href="" target="_blank">Screencast</a>
+  <a href="" target="_blank">Screencastify</a>
+  <a href="" target="_blank">Adobe Spark</a>
+  <a href="" target="_blank">OBS Project</a>
+  <a href="" target="_blank">Hitfilm</a>
+  <a href="" target="_blank">ShadowPlay</a>
+  Game Bar
+  <br>
+  Online Database:
+  
+<b></font>
+</body>
+</html>
