@@ -5,8 +5,9 @@
     <script>
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
-    function dailyObjectives() {document.getElementById("dailyObjectives").classList.toggle("show");}
+    function allDailyObjectives() {document.getElementById("allDailyObjectives").classList.toggle("show");}
     function allSchoolResources() {document.getElementById("allSchoolResources").classList.toggle("show");}
+    function APResources() {document.getElementById("APResources").classList.toggle("show");}
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
@@ -42,8 +43,8 @@
   <br>
 <font size=4; font color="white";>
   <div class="dropdown"> 
-  <button onclick="dailyObjectives()" class="dropbtn">Daily Objectives</button>
-    <div id="dailyObjectives" class="dropdown-content">
+  <button onclick="allDailyObjectives()" class="dropbtn">All Daily Objectives</button>
+    <div id="allDailyObjectives" class="dropdown-content">
       <a href="objective2.html">CSE 2</a>
       <a href="objective3.html">CSP 3</a>
       <a href="objective4.html">CSE 4</a>
@@ -64,24 +65,17 @@
       <a href="" target="_blank">KITE</a>
     </div>
   </div>
+  <div class="dropdown"> 
+  <button onclick="APResources()" class="dropbtn">AP Resources</button>
+    <div id="APResources" class="dropdown-content">
+      <a href="" target="_blank">CSP College Board</a>
+      <a href="" target="_blank">CSA College Board</a>
+      <a href="" target="_blank">Explore Task</a>
+      <a href="" target="_blank">Create Task</a>
+      <a href="" target="_blank">Digital Portfolio</a>
+    </div>
+  </div>
 
-  All School Resources:
-  <a href="" target="_blank">ATLAS</a>
-  <a href="" target="_blank">Dojo</a>
-  <a href="" target="_blank">Edmodo</a>
-  <a href="" target="_blank">PLTW</a>
-  <a href="" target="_blank">Code.org</a>
-  <a href="" target="_blank">Socrative</a>
-  <a href="" target="_blank">Quizlet</a>
-  <a href="" target="_blank">KITE</a>
-  <br>
-  AP Resources:
-  <a href="" target="_blank">CSP College Board</a>
-  <a href="" target="_blank">CSA College Board</a>
-  <a href="" target="_blank">Explore Task</a>
-  <a href="" target="_blank">Create Task</a>
-  <a href="" target="_blank">Digital Portfolio</a>
-  <br>
   Block Coding:
   <a href="" target="_blank">Lightbot</a>
   <a href="" target="_blank">Kodu</a>
